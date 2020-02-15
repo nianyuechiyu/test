@@ -1,0 +1,20 @@
+{foreach $menu as $v}
+<h3  class="{$v.name}">{$v.h3}</h3>
+<ul class="XT_con {$v.name}">
+    <!-- <li style="display:none;">{$idne=1}</li> -->
+    {foreach $v.child as $k}
+    <li><a href="{$k.href}"  target="right">{$k.name}</a></li>
+    {/foreach}
+</ul>
+{/foreach}
+
+<script src="/static/jQuery/jquery.js"></script>
+<script>
+function show(tid){
+    //alert(tid);
+  $('.nav').find('h3').hide();
+  $('.nav').find('ul').hide();
+  $('.'+tid).show();
+}
+</script>
+

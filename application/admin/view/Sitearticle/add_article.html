@@ -1,0 +1,55 @@
+    <html>
+        <head>
+            <title></title>
+        </head>
+        <link href="/static/css/add_article.css" rel="stylesheet" type="text/css"/>
+        <link href="/static/layer/theme/default/layer.css" rel="stylesheet" type="text/css"/>
+        <body>
+            <header class="header">
+               <p class="p">
+               <span class="span">LiGame文章_Tian加</span>
+               <span style="font-family:'微软雅黑';"></span>
+               <span></span>
+               </p>
+            </header>
+            <div class="divs">
+                添加文章——
+            </div>
+            <section class="section">
+                <div class="dovc">
+                    <form action="#" method="POST">
+                        <p class="title">文章标题：<input type="text" placeholder="严禁口吐芬芳！！！" /></p>
+                        <p class="imgss">封面图选择：<input type="button" value="请选择图片..." /> <span>( 图片大小不能超过2MB )</span></p>
+                        <p class="citnc">内容简介：↓↓↓ <span>(注：简介字数不能过120字)</span><br /><br /><textarea placeholder="小嘴抹了蜜的‘TX’直接打死！"></textarea></p>
+                        <p class="art_con">文章类型：<select> 
+                                        <option>请选择</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                        </p>
+                        <p class="spik">热点话题：<input type="text" value="#:" /> <span>(必须带有" #: "不超过7字)</span></p>
+                        <textarea name="content" id="content" style="width:40vw;height:300px;" ></textarea>
+                        <p class="submitIm"><input type="submit" value="确认添加"></p>
+                    </form>
+                </div>
+            </section>
+        </body>
+    </html>
+    <script src="/static/jQuery/jquery.js"></script>
+    <script src="/static/layer/layer.js"></script>
+    <script src="/static/jScript/kindeditor/kindeditor-all-min.js"></script>
+    <script>
+
+        KindEditor.ready(function(K) {
+        editor = K.create('#content', {
+	    resizeType : 1,
+	    allowPreviewEmoticons : false,
+	    allowImageUpload : true,
+	    items : [
+		'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+		'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+		'insertunorderedlist', '|', 'emoticons', 'image', 'multiimage', 'link']
+        });
+        });
+    </script>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{margin:0px;padding:0px;}
+        .headst{width:89%;height:6vw;margin:0px auto;line-height:6vw;color:#888;}
+        .sections{width:95%;background-color:rgb(241, 241, 241);height:100%;margin:0px auto;border-radius:1vw;}
+        .sections .ulstr{padding-left:2vw;}
+        .ulstr li{width:60%;height:5vw;line-height:5vw;list-style:none;font-size:1.2vw;color:#666;}
+        .ulstr li:nth-child(1) input{margin-left:3.7vw}
+        .ulstr li:nth-child(2) input{margin-left:3.7vw}
+        .ulstr li:nth-child(3) input{margin-left:1.1vw}
+        .ulstr li .inputs{width:30vw;height:2.5vw;color:#777;border:none;border:1px solid rgb(202, 202, 202);}
+        .xz{margin-left:3vw;}
+        #imgss{height:15vw;}
+        #imgss .button{padding:0.5vw 3vw;color:#777;border:none;border:1px solid rgb(202, 202, 202);}
+        #imgtp{display:block;height:10vw;}
+        .submit{padding:0.5vw 3vw;color:#777;border:none;border:1px solid rgb(202, 202, 202);}
+    </style>
+    <link href="/static/layer/theme/default/layer.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header class="headst"><h3>网站配置———</h3></header>
+    <section class="sections">
+        <ul class="ulstr">
+            <li>网站名称：<input id="sitename" class="inputs" type="text" ></li>
+            <li>网站域名：<input id="domain"  class="inputs" type="text" ></li>
+            <li>网站keyworld：<input id="keyworld"  class="inputs" type="text" ></li>
+            <li>网站description：<input id="description"  class="inputs" type="text" ></li>
+            <li>是否允许会员发布：
+                <span class="xz">
+                    <input type="radio" name="radio" value="开启" > 开启
+                    <span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>
+                    <input type="radio" name="radio" value="关闭" > 关闭
+                <span>
+            </li>
+            <iframe name="newwin" style="display:none;" id="newwin"></iframe>
+            <form target="newwin"  method="POST" id="mage" action="/admin/stcpic/getimg" enctype="multipart/form-data" >
+                <li id="imgss">
+                    logo：<input type="file" name='file' id="file" style="display:none;">
+                          <input type="hidden" id="logo" name="logo" value="">
+                    <input class="button" type='button' onclick="file.click()" value='点击选择图片' id="subt">
+                    <spam id="imgtp"></span>
+                </li>
+            </form>
+            
+            <li><label>图片大小<label></li>
+            <li>关闭网站：<input type="checkbox"></li>
+            <li>关闭网页显示：<input type="text" id="index_show" class="inputs"></li>
+            <li><input class="submit" type="submit" value="提交"></li>
+            </ul>
+    </section>
+</body>
+</html>
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/layer/layer.js"></script>
+<script>
+    $(function(){
+        $('#file').change(function(){
+            $("#mage").submit();
+        });
+        window.showImg =function(src){
+        $('#imgtp').html("<img src=/static/"+src+" width='100'>");
+        $('#logo').val(src);
+        }
+    });
+
+    $(function(){
+        var 
+    });
+
+    var loaddate =function(){
+        layer.msg('正在玩命加载...',{icon:16,time:100000});
+        $.post('admin/site/getconfig',{ping:true},function(res){
+            alert(res);
+        });
+    }
+    loaddate();
+</script>

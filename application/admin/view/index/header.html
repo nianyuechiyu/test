@@ -1,0 +1,49 @@
+<style>
+    *{margin:0px;padding:0px;}
+    .header{width:100%;height:100%;background-color:rgb(24, 24, 24);display:flex;justify-content:space-between;}
+        .header .logo{width:18%;height:5.24vw;background-color:#3a3939;}
+        .header .logo .font_title{font-size:2.2vw;font-family:'仿宋';line-height:5vw;padding-left:1vw;color:#999;}
+        .imgss{width:4%;background-image:url('/static/img/fen.png');background-size:100%;background-repeat:no-repeat;padding:1.3vw;margin-left:-4vw;}
+        .user_coun{width:40%;line-height:5vw;padding-left:1vw;color:rgb(240, 240, 240);font-family:'微软雅黑';}
+        .user_coun ul li{float:left;width:17%;list-style:none;text-align:center;font-size: 1.15vw;}
+        .user_coun ul li:hover{background-color:#08792a;color:#fff;}
+        .fand{background-color:#789c83;color:#ffff;}
+        .userm{width:25%;}
+        .userm ul li{float:left;list-style:none;line-height:5vw;width:40%;text-align:center;color:#ebebeb;font-size:1.1vw;}
+</style>
+<header class="header">
+        <div class="logo"><span class="font_title">
+            LiGameEXTNS<span style="font-size:1.4vw;font-weight:bold;">系统</span></span>
+        </div>
+        <div class="imgss"></div>
+        <div class="user_coun">    
+            <ul>
+                <li class="fand" tid='xt'>TX系统</li>   
+                <li tid='data'>数据</li>
+                <li tid='user'>VIP会员</li>
+            </ul>
+        </div>
+        <div class="userm">
+            <ul>
+                <li>Hello</li>
+                <li>
+                    <a href="#" style="color:#319751;text-decoration:none;
+                                       padding:1.26vw; 
+                                       border-bottom:0.5vw solid #1a5e1a;">
+                    XXX:Admin
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <script src="/static/jQuery/jquery.js"></script>
+    <script>
+      $(function(){
+        $('.user_coun').find('li').click(function(){
+            var tid = $(this).attr('tid');
+            //获取父页面的子页面
+            var iframeChild = parent.document.getElementById('menu').contentWindow;
+            iframeChild.show(tid);
+        }); 
+      })  
+    </script>

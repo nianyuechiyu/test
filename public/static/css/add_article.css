@@ -1,0 +1,25 @@
+*{margin:0px;padding:0px;}
+        /* 头部 */
+        body{width:100%;background-color:rgb(231, 231, 231);}
+        .header{width:96%;height:10vw;color:#666;background-size:100%;margin-left:2%;border-bottom:0.4vw solid rgb(224, 224, 224);border-right:0.5vw solid rgb(219, 219, 219);border-radius:0vw 0vw 0.6vw 0.6vw;}
+        .header .span{font-size:3vw;font-family:'宋体';}
+        .p{padding:3vw;font-size:1.5vw;}
+        /* 主体 */
+        .divs{width:96%;margin:1% 3%;font-size:2vw;color:#555;}    
+        .section{width:96%;margin:1% 2%;background-color:rgb(248, 248, 248);background-size:100%;border-radius:1vw;border-bottom:0.6vw solid rgb(224, 224, 224);border-right:0.5vw solid rgb(219, 219, 219);}
+        .dovc{width:98%;margin:0vw auto;padding:1vw;}
+        .title{height:6vw;font-size:1.7vw;font-weight:bold;color:#555;line-height:6vw;}
+        .title input{width:40vw;height:4vw;border:none;border-radius:1vw;padding:1vw;border:0.1vw solid rgb(231, 231, 231);}
+        .imgss{height:6vw;line-height:6vw;font-size:1.7vw;font-weight:bold;color:#555;}
+        .imgss input{padding:0.7vw 3vw;border:none;color:#444;}
+        .imgss span{font-size:1.2vw;font-weight:none;}
+        .citnc{font-size:1.7vw;font-weight:bold;color:#555;}
+        .citnc textarea{width:50vw;height:10vw;border:0.1vw solid rgb(231, 231, 231);border-radius:1vw;padding:1vw;}
+        .citnc span{font-size:1.2vw;font-weight:none;}
+        .art_con{height:6vw;line-height:6vw;font-size:1.7vw;font-weight:bold;color:#555;}
+        .art_con select{width:10vw;height:3vw;border:none;font-size:1.4vw;color:rgb(238, 238, 238);background-color:rgb(124, 124, 124);}
+        .spik{height:6vw;line-height:6vw;font-size:1.7vw;font-weight:bold;color:#555;}
+        .spik input{width:12vw;height:3vw;padding:0.4vw;border:none;border:0.1vw solid rgb(211, 211, 211);color:#555;}
+        .spik span{font-size:1.2vw;font-weight:none;}
+        .submitIm{margin:2vw;}
+        .submitIm input{padding:1vw 5.5vw;color:#555;border:none;border:0.12vw solid rgb(138, 138, 138);border-radius:0.5vw;}

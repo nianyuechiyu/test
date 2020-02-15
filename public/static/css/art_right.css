@@ -1,0 +1,12 @@
+*{margin:0px;padding:0px;}
+/* 头部 */
+body{width:100%;background-color:rgb(231, 231, 231);}
+.header{width:96%;height:10vw;color:#666;background-size:100%;margin-left:2%;border-bottom:0.4vw solid rgb(224, 224, 224);border-right:0.5vw solid rgb(219, 219, 219);border-radius:0vw 0vw 0.6vw 0.6vw;}
+.header .span{font-size:3vw;font-family:'宋体';}
+.p{padding:3vw;font-size:1.5vw;}
+/* 主体 */
+.divs{width:96%;margin:1% 2%;font-size:2vw;color:#555;}    
+.section .ul{width:100%;}
+.section{width:96%;margin:1% 2%;height:39.8vw;background-image:url('/static/img/art_right.jpg');background-size:100%;border-radius:1vw;border-bottom:0.6vw solid rgb(224, 224, 224);border-right:0.5vw solid rgb(219, 219, 219);}
+.section .ul li{list-style:none;width:60%;height:4vw;line-height:4vw;padding:0vw 3vw;font-size:1.5vw;color:#888;}
+.section .ul li span{font-size:1.5vw;font-weight:bold;color:#555;} 

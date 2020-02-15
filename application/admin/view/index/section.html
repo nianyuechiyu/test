@@ -1,0 +1,30 @@
+<style>
+       *{margin:0px;padding:0px;}
+       body section{width:100%;display:flex;align-content:center;}
+        .nav{width:100%;background-color:#3a3939;}
+        .nav hr{width:65%;height:2vw;background-color:#999;}
+        .nav h3{text-align:center;line-height:20vw;font-family:'宋体';background-color:#222121;font-size:7vw;color:rgb(110, 110, 110);}
+        .XT_con{padding:3vw;text-align:center;}
+        .XT_con li{height:15vw;line-height:15vw;list-style:none;color:#888;font-size:1.4vw;background-color:#3a3939;}
+        .XT_con li a{color:rgb(220, 220, 220);text-decoration:none;display:block;}
+        .none{background-color:#109c3a;color: #fff;}
+        .XT_con li:hover{background-color:#109c3a;color:#fff;}
+</style>
+<body>
+        <section>
+            <nav class="nav">
+                <br />
+                <hr />
+                {include file='/index/menu'}
+            </nav>
+            </div>
+        </section>
+</body>
+<script src="/static/jQuery/jquery.js"></script>
+<script>
+$(function(){
+  $('.fand').removeClass('fand');
+  $(this).addClass('none');
+
+ });
+</script>
